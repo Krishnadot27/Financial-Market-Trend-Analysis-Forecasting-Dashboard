@@ -1,0 +1,459 @@
+2026-03-05 18:45:32 | INFO     | __main__:main:42 — ============================================================
+2026-03-05 18:45:32 | INFO     | __main__:main:43 —   STEP 1 — Data Pipeline
+2026-03-05 18:45:32 | INFO     | __main__:main:44 — ============================================================
+2026-03-05 18:45:32 | INFO     | __main__:main:48 — Tickers to download: ['RELIANCE.NS', 'TCS.NS', 'INFY.NS', 'HDFCBANK.NS', 'ICICIBANK.NS', 'HINDUNILVR.NS', 'WIPRO.NS', 'LT.NS', 'SBIN.NS', 'BAJFINANCE.NS']
+2026-03-05 18:45:32 | INFO     | src.data_loader:download_all_tickers:264 — Batch downloading 10 tickers  [2014-01-01 → 2024-12-31]
+2026-03-05 18:45:32 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading RELIANCE.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:37 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 4.98s
+2026-03-05 18:45:37 | WARNING  | src.data_loader:_validate:168 — RELIANCE.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:37 | SUCCESS  | src.data_loader:load:219 — Cached RELIANCE.NS → RELIANCE_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:37 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading TCS.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:38 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 0.87s
+2026-03-05 18:45:38 | WARNING  | src.data_loader:_validate:168 — TCS.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:38 | SUCCESS  | src.data_loader:load:219 — Cached TCS.NS → TCS_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:38 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading INFY.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:41 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 3.36s
+2026-03-05 18:45:41 | WARNING  | src.data_loader:_validate:168 — INFY.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:41 | SUCCESS  | src.data_loader:load:219 — Cached INFY.NS → INFY_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:41 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading HDFCBANK.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:46 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 4.85s
+2026-03-05 18:45:46 | WARNING  | src.data_loader:_validate:168 — HDFCBANK.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:46 | SUCCESS  | src.data_loader:load:219 — Cached HDFCBANK.NS → HDFCBANK_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:46 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading ICICIBANK.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:47 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 0.62s
+2026-03-05 18:45:47 | WARNING  | src.data_loader:_validate:168 — ICICIBANK.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:47 | SUCCESS  | src.data_loader:load:219 — Cached ICICIBANK.NS → ICICIBANK_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:47 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading HINDUNILVR.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:47 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 0.61s
+2026-03-05 18:45:47 | WARNING  | src.data_loader:_validate:168 — HINDUNILVR.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:47 | SUCCESS  | src.data_loader:load:219 — Cached HINDUNILVR.NS → HINDUNILVR_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:47 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading WIPRO.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:51 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 4.03s
+2026-03-05 18:45:51 | WARNING  | src.data_loader:_validate:168 — WIPRO.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:51 | SUCCESS  | src.data_loader:load:219 — Cached WIPRO.NS → WIPRO_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:51 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading LT.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:55 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 3.65s
+2026-03-05 18:45:55 | WARNING  | src.data_loader:_validate:168 — LT.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:55 | SUCCESS  | src.data_loader:load:219 — Cached LT.NS → LT_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:55 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading SBIN.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:58 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 3.11s
+2026-03-05 18:45:58 | WARNING  | src.data_loader:_validate:168 — SBIN.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:58 | SUCCESS  | src.data_loader:load:219 — Cached SBIN.NS → SBIN_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:58 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading BAJFINANCE.NS  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:45:59 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 0.74s
+2026-03-05 18:45:59 | WARNING  | src.data_loader:_validate:168 — BAJFINANCE.NS: 2 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:45:59 | SUCCESS  | src.data_loader:load:219 — Cached BAJFINANCE.NS → BAJFINANCE_NS_2014-01-01_2024-12-31_1d.csv  (2710 rows)
+2026-03-05 18:45:59 | INFO     | src.data_loader:download_all_tickers:275 — Batch complete: 10 succeeded, 0 failed
+2026-03-05 18:45:59 | INFO     | __main__:main:63 — Downloading benchmark: ^NSEI
+2026-03-05 18:45:59 | INFO     | src.data_loader:download_all_tickers:264 — Batch downloading 1 tickers  [2014-01-01 → 2024-12-31]
+2026-03-05 18:45:59 | INFO     | src.data_loader:_download_from_yahoo:96 — Downloading ^NSEI  [2014-01-01 → 2024-12-31]  interval=1d
+2026-03-05 18:46:03 | DEBUG    | src.utils:wrapper:140 — _download_from_yahoo completed in 3.92s
+2026-03-05 18:46:03 | WARNING  | src.data_loader:_validate:168 — ^NSEI: 28 zero-volume rows — replacing with NaN then ffill
+2026-03-05 18:46:03 | SUCCESS  | src.data_loader:load:219 — Cached ^NSEI → IDX_NSEI_2014-01-01_2024-12-31_1d.csv  (2698 rows)
+2026-03-05 18:46:03 | INFO     | src.data_loader:download_all_tickers:275 — Batch complete: 1 succeeded, 0 failed
+2026-03-05 18:46:03 | SUCCESS  | __main__:main:74 — Benchmark saved → NIFTY50_benchmark.csv
+2026-03-05 18:46:03 | INFO     | __main__:main:79 — 
+── Data Quality Summary ──
+2026-03-05 18:46:03 | INFO     | __main__:main:100 — 
+── Temporal Split Demo: RELIANCE.NS ──
+2026-03-05 18:46:03 | INFO     | src.data_loader:temporal_split:316 — Split → Train: 2014-01-01 to 2022-03-31 (2033 rows) | Val: 2022-04-01 to 2023-05-08 (271 rows) | Test: 2023-05-09 to 2024-12-30 (406 rows)
+2026-03-05 18:46:03 | SUCCESS  | __main__:main:114 — Saved 10 clean CSVs → data/processed/
+2026-03-05 18:46:03 | INFO     | __main__:main:117 — 
+============================================================
+2026-03-05 18:46:03 | INFO     | __main__:main:118 —   Pipeline complete!
+2026-03-05 18:46:03 | INFO     | __main__:main:119 —   ✔  10 tickers downloaded and validated
+2026-03-05 18:46:03 | INFO     | __main__:main:120 —   ✔  Data range: 2014-01-01 → 2024-12-31
+2026-03-05 18:46:03 | INFO     | __main__:main:121 —   ✔  Split: 75% train / 10% val / 15% test
+2026-03-05 18:46:03 | INFO     | __main__:main:124 —   ✔  Cached CSVs in: data/raw/
+2026-03-05 18:46:03 | INFO     | __main__:main:125 —   ✔  Clean CSVs in:  data/processed/
+2026-03-05 18:46:03 | INFO     | __main__:main:126 — ============================================================
+2026-03-05 18:46:03 | INFO     | __main__:main:127 —   Next step → run: python scripts/run_feature_engineering.py
+2026-03-05 18:46:03 | INFO     | __main__:main:128 — ============================================================
+2026-03-05 18:58:54 | INFO     | __main__:main:38 — ============================================================
+2026-03-05 18:58:54 | INFO     | __main__:main:39 —   STEP 2 — Feature Engineering
+2026-03-05 18:58:54 | INFO     | __main__:main:40 — ============================================================
+2026-03-05 18:58:54 | INFO     | __main__:main:55 — 
+Processing RELIANCE.NS  (2710 rows)
+2026-03-05 18:58:54 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:54 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:54 | DEBUG    | src.utils:wrapper:140 — build completed in 0.09s
+2026-03-05 18:58:54 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:54 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:54 | INFO     | __main__:main:69 —   Up days  : 52.0%  |  Down days: 48.0%
+2026-03-05 18:58:54 | SUCCESS  | __main__:main:74 —   Saved → RELIANCE_NS_features.csv
+2026-03-05 18:58:54 | INFO     | __main__:main:55 — 
+Processing TCS.NS  (2710 rows)
+2026-03-05 18:58:54 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:54 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:54 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:54 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-05 18:58:54 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:54 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:54 | INFO     | __main__:main:69 —   Up days  : 51.6%  |  Down days: 48.4%
+2026-03-05 18:58:55 | SUCCESS  | __main__:main:74 —   Saved → TCS_NS_features.csv
+2026-03-05 18:58:55 | INFO     | __main__:main:55 — 
+Processing INFY.NS  (2710 rows)
+2026-03-05 18:58:55 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:55 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:55 | DEBUG    | src.utils:wrapper:140 — build completed in 0.10s
+2026-03-05 18:58:55 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:55 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:55 | INFO     | __main__:main:69 —   Up days  : 52.1%  |  Down days: 47.9%
+2026-03-05 18:58:55 | SUCCESS  | __main__:main:74 —   Saved → INFY_NS_features.csv
+2026-03-05 18:58:55 | INFO     | __main__:main:55 — 
+Processing HDFCBANK.NS  (2710 rows)
+2026-03-05 18:58:55 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:55 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:55 | DEBUG    | src.utils:wrapper:140 — build completed in 0.09s
+2026-03-05 18:58:55 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:55 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:55 | INFO     | __main__:main:69 —   Up days  : 52.3%  |  Down days: 47.7%
+2026-03-05 18:58:55 | SUCCESS  | __main__:main:74 —   Saved → HDFCBANK_NS_features.csv
+2026-03-05 18:58:55 | INFO     | __main__:main:55 — 
+Processing ICICIBANK.NS  (2710 rows)
+2026-03-05 18:58:55 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:55 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:55 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:55 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-05 18:58:55 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:55 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:55 | INFO     | __main__:main:69 —   Up days  : 50.6%  |  Down days: 49.4%
+2026-03-05 18:58:56 | SUCCESS  | __main__:main:74 —   Saved → ICICIBANK_NS_features.csv
+2026-03-05 18:58:56 | INFO     | __main__:main:55 — 
+Processing HINDUNILVR.NS  (2710 rows)
+2026-03-05 18:58:56 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:56 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2504 rows × 125 features (dropped 206 NaN rows)
+2026-03-05 18:58:56 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-05 18:58:56 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:56 | INFO     | __main__:main:68 —   Rows     : 2504
+2026-03-05 18:58:56 | INFO     | __main__:main:69 —   Up days  : 50.1%  |  Down days: 49.9%
+2026-03-05 18:58:56 | SUCCESS  | __main__:main:74 —   Saved → HINDUNILVR_NS_features.csv
+2026-03-05 18:58:56 | INFO     | __main__:main:55 — 
+Processing WIPRO.NS  (2710 rows)
+2026-03-05 18:58:56 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:56 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:56 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-05 18:58:56 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:56 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:56 | INFO     | __main__:main:69 —   Up days  : 51.6%  |  Down days: 48.4%
+2026-03-05 18:58:56 | SUCCESS  | __main__:main:74 —   Saved → WIPRO_NS_features.csv
+2026-03-05 18:58:56 | INFO     | __main__:main:55 — 
+Processing LT.NS  (2710 rows)
+2026-03-05 18:58:56 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:56 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:56 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-05 18:58:56 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:56 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:56 | INFO     | __main__:main:69 —   Up days  : 50.2%  |  Down days: 49.8%
+2026-03-05 18:58:56 | SUCCESS  | __main__:main:74 —   Saved → LT_NS_features.csv
+2026-03-05 18:58:56 | INFO     | __main__:main:55 — 
+Processing SBIN.NS  (2710 rows)
+2026-03-05 18:58:56 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:56 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:57 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2509 rows × 125 features (dropped 201 NaN rows)
+2026-03-05 18:58:57 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-05 18:58:57 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:57 | INFO     | __main__:main:68 —   Rows     : 2509
+2026-03-05 18:58:57 | INFO     | __main__:main:69 —   Up days  : 51.3%  |  Down days: 48.7%
+2026-03-05 18:58:57 | SUCCESS  | __main__:main:74 —   Saved → SBIN_NS_features.csv
+2026-03-05 18:58:57 | INFO     | __main__:main:55 — 
+Processing BAJFINANCE.NS  (2710 rows)
+2026-03-05 18:58:57 | INFO     | src.feature_engineering:build:483 — Building features for 2710 rows...
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-05 18:58:57 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-05 18:58:57 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 2510 rows × 125 features (dropped 200 NaN rows)
+2026-03-05 18:58:57 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-05 18:58:57 | INFO     | __main__:main:67 —   Features : 125
+2026-03-05 18:58:57 | INFO     | __main__:main:68 —   Rows     : 2510
+2026-03-05 18:58:57 | INFO     | __main__:main:69 —   Up days  : 52.5%  |  Down days: 47.5%
+2026-03-05 18:58:57 | SUCCESS  | __main__:main:74 —   Saved → BAJFINANCE_NS_features.csv
+2026-03-05 18:58:57 | INFO     | __main__:main:99 — 
+============================================================
+2026-03-05 18:58:57 | INFO     | __main__:main:100 —   Feature engineering complete!
+2026-03-05 18:58:57 | INFO     | __main__:main:101 —   Next step → python scripts/run_model_training.py
+2026-03-05 18:58:57 | INFO     | __main__:main:102 — ============================================================
+2026-03-05 19:32:24 | INFO     | __main__:main:53 — ============================================================
+2026-03-05 19:32:24 | INFO     | __main__:main:54 —   STEP 3 — Model Training: RELIANCE.NS
+2026-03-05 19:32:24 | INFO     | __main__:main:55 — ============================================================
+2026-03-05 19:32:24 | INFO     | __main__:main:59 — Loaded: 2510 rows × 136 columns
+2026-03-05 19:32:24 | INFO     | __main__:main:64 — Task: regression  |  Target: Target_Return
+2026-03-05 19:32:24 | INFO     | __main__:main:68 — Features: 125  |  Samples: 2510
+2026-03-05 19:32:24 | INFO     | __main__:main:80 — Split → Train: 1883  Val: 251  Test: 376
+2026-03-05 19:32:24 | INFO     | __main__:main:85 — 
+── Walk-Forward Cross Validation ──
+2026-03-05 19:32:24 | INFO     | src.model_training:walk_forward_validate:500 — Walk-forward CV: 5 folds  model=XGBoostModel  task=regression
+2026-03-05 19:32:24 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=317
+2026-03-05 19:32:24 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.5s  best_iteration=N/A
+2026-03-05 19:32:24 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 1: RMSE=0.0160  R²=-0.2469
+2026-03-05 19:32:24 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=630
+2026-03-05 19:32:25 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.6s  best_iteration=N/A
+2026-03-05 19:32:25 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 2: RMSE=0.0151  R²=-0.1458
+2026-03-05 19:32:25 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=943
+2026-03-05 19:32:26 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.7s  best_iteration=N/A
+2026-03-05 19:32:26 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 3: RMSE=0.0187  R²=-0.0665
+2026-03-05 19:32:26 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1256
+2026-03-05 19:32:27 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.8s  best_iteration=N/A
+2026-03-05 19:32:27 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 4: RMSE=0.0279  R²=-0.0225
+2026-03-05 19:32:27 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1569
+2026-03-05 19:32:27 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.9s  best_iteration=N/A
+2026-03-05 19:32:27 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 5: RMSE=0.0179  R²=-0.1398
+2026-03-05 19:32:27 | INFO     | src.model_training:walk_forward_validate:541 — 
+CV Summary:
+ fold   RMSE      R2
+    1 0.0160 -0.2469
+    2 0.0151 -0.1458
+    3 0.0187 -0.0665
+    4 0.0279 -0.0225
+    5 0.0179 -0.1398
+2026-03-05 19:32:27 | INFO     | src.model_training:walk_forward_validate:542 — Mean: {'RMSE': np.float64(0.0191), 'R2': np.float64(-0.1243)}
+2026-03-05 19:32:27 | INFO     | __main__:main:95 — 
+── Model Comparison (Test Set) ──
+2026-03-05 19:32:27 | INFO     | src.model_training:compare_models:571 — 
+── LinearBaseline ──
+2026-03-05 19:32:27 | INFO     | src.model_training:fit:85 — Training LinearBaseline  [task=regression, features=125, train_rows=1883]
+2026-03-05 19:32:27 | SUCCESS  | src.model_training:fit:97 — LinearBaseline trained in 0.1s
+2026-03-05 19:32:28 | INFO     | src.model_training:compare_models:571 — 
+── RandomForest ──
+2026-03-05 19:32:28 | INFO     | src.model_training:fit:85 — Training RandomForestModel  [task=regression, features=125, train_rows=1883]
+2026-03-05 19:32:28 | SUCCESS  | src.model_training:fit:97 — RandomForestModel trained in 0.3s
+2026-03-05 19:32:28 | INFO     | src.model_training:compare_models:571 — 
+── XGBoost ──
+2026-03-05 19:32:28 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1883
+2026-03-05 19:32:30 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 2.1s  best_iteration=N/A
+2026-03-05 19:32:30 | INFO     | __main__:main:99 — 
+── Training Final XGBoost on Train+Val ──
+2026-03-05 19:34:51 | INFO     | __main__:main:53 — ============================================================
+2026-03-05 19:34:51 | INFO     | __main__:main:54 —   STEP 3 — Model Training: RELIANCE.NS
+2026-03-05 19:34:51 | INFO     | __main__:main:55 — ============================================================
+2026-03-05 19:34:51 | INFO     | __main__:main:59 — Loaded: 2510 rows × 136 columns
+2026-03-05 19:34:51 | INFO     | __main__:main:64 — Task: regression  |  Target: Target_Return
+2026-03-05 19:34:51 | INFO     | __main__:main:68 — Features: 125  |  Samples: 2510
+2026-03-05 19:34:51 | INFO     | __main__:main:80 — Split → Train: 1883  Val: 251  Test: 376
+2026-03-05 19:34:51 | INFO     | __main__:main:85 — 
+── Walk-Forward Cross Validation ──
+2026-03-05 19:34:51 | INFO     | src.model_training:walk_forward_validate:500 — Walk-forward CV: 5 folds  model=XGBoostModel  task=regression
+2026-03-05 19:34:51 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=317
+2026-03-05 19:34:52 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.5s  best_iteration=N/A
+2026-03-05 19:34:52 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 1: RMSE=0.0160  R²=-0.2469
+2026-03-05 19:34:52 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=630
+2026-03-05 19:34:52 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.6s  best_iteration=N/A
+2026-03-05 19:34:52 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 2: RMSE=0.0151  R²=-0.1458
+2026-03-05 19:34:52 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=943
+2026-03-05 19:34:53 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.7s  best_iteration=N/A
+2026-03-05 19:34:53 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 3: RMSE=0.0187  R²=-0.0665
+2026-03-05 19:34:53 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1256
+2026-03-05 19:34:54 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.8s  best_iteration=N/A
+2026-03-05 19:34:54 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 4: RMSE=0.0279  R²=-0.0225
+2026-03-05 19:34:54 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1569
+2026-03-05 19:34:55 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.9s  best_iteration=N/A
+2026-03-05 19:34:55 | INFO     | src.model_training:walk_forward_validate:523 —   Fold 5: RMSE=0.0179  R²=-0.1398
+2026-03-05 19:34:55 | INFO     | src.model_training:walk_forward_validate:541 — 
+CV Summary:
+ fold   RMSE      R2
+    1 0.0160 -0.2469
+    2 0.0151 -0.1458
+    3 0.0187 -0.0665
+    4 0.0279 -0.0225
+    5 0.0179 -0.1398
+2026-03-05 19:34:55 | INFO     | src.model_training:walk_forward_validate:542 — Mean: {'RMSE': np.float64(0.0191), 'R2': np.float64(-0.1243)}
+2026-03-05 19:34:55 | INFO     | __main__:main:95 — 
+── Model Comparison (Test Set) ──
+2026-03-05 19:34:55 | INFO     | src.model_training:compare_models:571 — 
+── LinearBaseline ──
+2026-03-05 19:34:55 | INFO     | src.model_training:fit:85 — Training LinearBaseline  [task=regression, features=125, train_rows=1883]
+2026-03-05 19:34:55 | SUCCESS  | src.model_training:fit:97 — LinearBaseline trained in 0.1s
+2026-03-05 19:34:55 | INFO     | src.model_training:compare_models:571 — 
+── RandomForest ──
+2026-03-05 19:34:55 | INFO     | src.model_training:fit:85 — Training RandomForestModel  [task=regression, features=125, train_rows=1883]
+2026-03-05 19:34:55 | SUCCESS  | src.model_training:fit:97 — RandomForestModel trained in 0.3s
+2026-03-05 19:34:55 | INFO     | src.model_training:compare_models:571 — 
+── XGBoost ──
+2026-03-05 19:34:55 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1883
+2026-03-05 19:34:57 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 2.0s  best_iteration=N/A
+2026-03-05 19:34:57 | INFO     | __main__:main:99 — 
+── Training Final XGBoost on Train+Val ──
+2026-03-05 19:34:57 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=2134
+2026-03-05 19:34:59 | INFO     | src.model_training:_log_val_score:105 —   Val RMSE=0.0149  R²=-0.2904
+2026-03-05 19:34:59 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 2.2s  best_iteration=N/A
+2026-03-05 19:34:59 | INFO     | __main__:main:113 — 
+── Final Test Set Evaluation ──
+2026-03-05 19:34:59 | INFO     | __main__:main:121 — 
+── Top 15 Feature Importances ──
+2026-03-05 19:34:59 | SUCCESS  | src.model_training:save:152 — Model saved → C:\Users\krush\OneDrive\Documents\predictive analysis pr\models\xgboost_regression_RELIANCE_NS.pkl
+2026-03-05 19:34:59 | SUCCESS  | __main__:main:132 — Results saved → C:\Users\krush\OneDrive\Documents\predictive analysis pr\results\model_comparison_RELIANCE_NS.csv
+2026-03-05 19:34:59 | INFO     | __main__:main:134 — 
+============================================================
+2026-03-05 19:34:59 | INFO     | __main__:main:135 —   Training complete!
+2026-03-05 19:34:59 | INFO     | __main__:main:136 —   ✔  Model saved → models/xgboost_regression_RELIANCE_NS.pkl
+2026-03-05 19:34:59 | INFO     | __main__:main:137 —   ✔  Comparison  → results/model_comparison_RELIANCE_NS.csv
+2026-03-05 19:34:59 | INFO     | __main__:main:138 —   Next step → python scripts/run_backtesting.py
+2026-03-05 19:34:59 | INFO     | __main__:main:139 — ============================================================
+2026-03-05 19:44:35 | INFO     | __main__:main:45 — ============================================================
+2026-03-05 19:44:35 | INFO     | __main__:main:46 —   STEP 4 — Backtesting: RELIANCE.NS
+2026-03-05 19:44:35 | INFO     | __main__:main:47 — ============================================================
+2026-03-05 19:44:35 | INFO     | src.model_training:load:164 — Model loaded from C:\Users\krush\OneDrive\Documents\predictive analysis pr\models\xgboost_regression_RELIANCE_NS.pkl
+2026-03-05 19:44:35 | INFO     | __main__:main:64 — Model loaded: xgboost_regression_RELIANCE_NS.pkl
+2026-03-05 19:44:35 | INFO     | __main__:main:70 — Test period: 2023-06-19 → 2024-12-27  (376 days)
+2026-03-05 19:44:35 | INFO     | src.backtesting:run_backtest:427 — Running backtest for RELIANCE.NS  |  Signal range: [-0.0153, 0.0114]  |  Rows: 376
+2026-03-05 19:44:35 | INFO     | src.backtesting:run:132 — Backtest complete: 376 trading days  |  Trades: 75  |  Long days: 119 (31.6%)
+2026-03-05 19:44:37 | SUCCESS  | src.backtesting:plot:310 — Backtest chart saved → C:\Users\krush\OneDrive\Documents\predictive analysis pr\results\backtest_RELIANCE_NS.html
+2026-03-05 19:44:37 | SUCCESS  | src.backtesting:monthly_returns_heatmap:373 — Heatmap saved → C:\Users\krush\OneDrive\Documents\predictive analysis pr\results\monthly_returns_RELIANCE_NS.html
+2026-03-05 19:44:37 | INFO     | __main__:main:91 — 
+── Monthly Returns ──
+2026-03-05 19:44:37 | SUCCESS  | src.backtesting:monthly_returns_heatmap:373 — Heatmap saved → C:\Users\krush\OneDrive\Documents\predictive analysis pr\results\monthly_heatmap_RELIANCE_NS.html
+2026-03-05 19:44:37 | INFO     | __main__:main:102 — 
+Direction Accuracy: 46.8%
+2026-03-05 19:44:37 | INFO     | __main__:main:105 — 
+============================================================
+2026-03-05 19:44:37 | INFO     | __main__:main:106 —   Backtesting complete!
+2026-03-05 19:44:37 | INFO     | __main__:main:107 —   ✔  Charts saved → results/
+2026-03-05 19:44:37 | INFO     | __main__:main:108 —   ✔  Alpha vs B&H: -24.02%
+2026-03-05 19:44:37 | INFO     | __main__:main:110 —   ✔  Strategy Sharpe: -2.415  (Needs improvement)
+2026-03-05 19:44:37 | INFO     | __main__:main:112 — ============================================================
+2026-03-05 19:44:37 | INFO     | __main__:main:113 —   Project complete! Next → build the Streamlit dashboard
+2026-03-05 19:44:37 | INFO     | __main__:main:114 — ============================================================

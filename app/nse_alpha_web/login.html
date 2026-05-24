@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NSE Alpha — Sign In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:        #050810;
+  --bg2:       #090e1a;
+  --bg3:       #0d1321;
+  --card:      #111827;
+  --border:    #1e2d42;
+  --border2:   #243044;
+  --text:      #f1f5f9;
+  --text2:     #94a3b8;
+  --text3:     #475569;
+  --blue:      #3b82f6;
+  --indigo:    #6366f1;
+  --cyan:      #06b6d4;
+  --purple:    #8b5cf6;
+  --green:     #22c55e;
+  --red:       #ef4444;
+  --grad:      linear-gradient(135deg,#1d4ed8 0%,#6366f1 50%,#8b5cf6 100%);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  display:flex;
+  min-height:100vh;
+  overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Noise */
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity:.025;pointer-events:none;z-index:0;
+}
+
+/* Orbs */
+.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0}
+.orb1{width:600px;height:600px;background:rgba(99,102,241,.08);top:-200px;left:0}
+.orb2{width:500px;height:500px;background:rgba(6,182,212,.05);bottom:-100px;right:0}
+
+/* ── LEFT PANEL ─────────────────────────────── */
+.left-panel{
+  flex:1;
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;
+  justify-content:center;
+  padding:60px 80px;
+  border-right:1px solid var(--border);
+  background:linear-gradient(135deg,rgba(9,14,26,.9) 0%,rgba(5,8,16,.95) 100%);
+  overflow:hidden;
+}
+.left-panel::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 20% 30%,rgba(99,102,241,.07),transparent);
+  pointer-events:none;
+}
+
+.lp-logo{
+  display:flex;align-items:center;gap:12px;
+  text-decoration:none;margin-bottom:64px;
+}
+.lp-logo-icon{
+  width:40px;height:40px;border-radius:10px;
+  background:var(--grad);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 24px rgba(99,102,241,.45);
+}
+.lp-logo-text{
+  font-family:'Syne',sans-serif;
+  font-size:1.2rem;font-weight:800;letter-spacing:-.02em;color:var(--text);
+}
+.lp-logo-sub{
+  font-family:'DM Mono',monospace;
+  font-size:.6rem;color:var(--text3);
+  letter-spacing:.08em;text-transform:uppercase;
+}
+
+.lp-headline{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(2rem,3.5vw,3rem);
+  font-weight:900;letter-spacing:-.04em;
+  line-height:1.05;margin-bottom:20px;
+}
+.lp-headline span{
+  background:var(--grad);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.lp-sub{
+  font-size:.95rem;color:var(--text2);
+  line-height:1.7;max-width:400px;margin-bottom:48px;
+}
+
+/* Feature bullets */
+.lp-features{display:flex;flex-direction:column;gap:16px}
+.lp-feat{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:16px 20px;
+  background:rgba(17,24,39,.6);
+  border:1px solid var(--border);
+  border-radius:12px;
+  backdrop-filter:blur(8px);
+  transition:border-color .25s ease,background .25s ease;
+}
+.lp-feat:hover{
+  border-color:rgba(99,102,241,.3);
+  background:rgba(17,24,39,.9);
+}
+.lp-feat-icon{
+  width:34px;height:34px;border-radius:8px;
+  background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.lp-feat-icon svg{stroke:var(--indigo)}
+.lp-feat-title{
+  font-family:'DM Sans',sans-serif;
+  font-size:.88rem;font-weight:600;color:var(--text);
+  margin-bottom:3px;
+}
+.lp-feat-desc{font-size:.78rem;color:var(--text3);line-height:1.5}
+
+/* ── RIGHT PANEL (Form) ──────────────────────── */
+.right-panel{
+  width:480px;flex-shrink:0;
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  padding:60px 48px;
+  background:rgba(9,14,26,.5);
+  backdrop-filter:blur(20px);
+}
+
+.form-card{
+  width:100%;max-width:380px;
+  animation:fadeUp .6s .1s both ease;
+}
+
+.form-header{margin-bottom:36px}
+.form-title{
+  font-family:'Syne',sans-serif;
+  font-size:1.6rem;font-weight:800;
+  letter-spacing:-.03em;color:var(--text);
+  margin-bottom:6px;
+}
+.form-sub{font-size:.85rem;color:var(--text2)}
+.form-sub a{color:var(--indigo);text-decoration:none;font-weight:500}
+.form-sub a:hover{text-decoration:underline}
+
+/* Tabs (Login / Register) */
+.auth-tabs{
+  display:flex;gap:2px;
+  background:rgba(17,24,39,.8);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:4px;margin-bottom:28px;
+}
+.auth-tab{
+  flex:1;text-align:center;
+  padding:8px 0;border-radius:7px;
+  font-family:'DM Sans',sans-serif;
+  font-size:.82rem;font-weight:600;
+  color:var(--text3);cursor:pointer;
+  transition:all .25s ease;border:none;background:transparent;
+}
+.auth-tab.active{
+  background:var(--card);
+  color:var(--text);
+  box-shadow:0 2px 8px rgba(0,0,0,.35);
+  border:1px solid var(--border2);
+}
+
+/* Form inputs */
+.form-group{margin-bottom:18px;position:relative}
+.form-label{
+  display:block;
+  font-family:'DM Sans',sans-serif;
+  font-size:.75rem;font-weight:600;
+  color:var(--text2);margin-bottom:6px;
+  letter-spacing:.03em;
+}
+.form-input{
+  width:100%;
+  padding:12px 16px;
+  background:rgba(17,24,39,.9);
+  border:1px solid var(--border);
+  border-radius:9px;
+  font-family:'DM Sans',sans-serif;
+  font-size:.88rem;color:var(--text);
+  outline:none;
+  transition:border-color .25s ease,box-shadow .25s ease,background .25s ease;
+  -webkit-appearance:none;
+}
+.form-input::placeholder{color:var(--text3)}
+.form-input:focus{
+  border-color:var(--indigo);
+  background:rgba(17,24,39,1);
+  box-shadow:0 0 0 3px rgba(99,102,241,.12);
+}
+.form-input.has-icon{padding-left:42px}
+
+.input-icon{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  pointer-events:none;
+  margin-top:12px;/* offset label height */
+}
+.input-icon svg{stroke:var(--text3);display:block}
+
+/* Password toggle */
+.pwd-toggle{
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  margin-top:12px;
+  background:none;border:none;cursor:pointer;
+  padding:0;display:flex;align-items:center;
+}
+.pwd-toggle svg{stroke:var(--text3);transition:stroke .2s ease}
+.pwd-toggle:hover svg{stroke:var(--text2)}
+
+/* Helper row */
+.form-helper{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:24px;
+}
+.checkbox-wrap{
+  display:flex;align-items:center;gap:8px;cursor:pointer;
+  font-size:.78rem;color:var(--text2);
+  user-select:none;
+}
+.checkbox-wrap input{
+  width:15px;height:15px;accent-color:var(--indigo);cursor:pointer;
+}
+.forgot-link{
+  font-size:.78rem;color:var(--text3);
+  text-decoration:none;transition:color .2s ease;
+}
+.forgot-link:hover{color:var(--text2)}
+
+/* Submit button */
+.btn-submit{
+  width:100%;padding:13px;border-radius:10px;
+  background:var(--grad);
+  border:none;
+  font-family:'DM Sans',sans-serif;
+  font-size:.92rem;font-weight:700;
+  color:#fff;cursor:pointer;
+  box-shadow:0 6px 24px rgba(99,102,241,.4);
+  transition:all .28s ease;
+  letter-spacing:.03em;
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.btn-submit:hover{
+  transform:translateY(-1px);
+  box-shadow:0 12px 40px rgba(99,102,241,.55);
+}
+.btn-submit:active{transform:translateY(0)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+
+/* Loading spinner in button */
+.spinner{
+  width:16px;height:16px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;
+  animation:spin .7s linear infinite;
+  display:none;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Divider */
+.form-divider{
+  display:flex;align-items:center;gap:12px;
+  margin:24px 0;
+}
+.form-divider::before,.form-divider::after{
+  content:'';flex:1;height:1px;background:var(--border);
+}
+.form-divider span{
+  font-family:'DM Mono',monospace;
+  font-size:.62rem;color:var(--text3);letter-spacing:.08em;
+}
+
+/* Demo login button */
+.btn-demo{
+  width:100%;padding:12px;border-radius:10px;
+  background:rgba(17,24,39,.8);
+  border:1px solid var(--border2);
+  font-family:'DM Sans',sans-serif;
+  font-size:.88rem;font-weight:600;
+  color:var(--text2);cursor:pointer;
+  transition:all .25s ease;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.btn-demo:hover{
+  background:rgba(17,24,39,1);
+  border-color:var(--blue);
+  color:var(--text);
+}
+
+/* Error / success messages */
+.form-msg{
+  padding:10px 14px;border-radius:8px;
+  font-size:.8rem;font-weight:500;
+  margin-bottom:16px;
+  display:none;
+  animation:fadeUp .3s ease both;
+}
+.form-msg.error{
+  background:rgba(239,68,68,.08);
+  border:1px solid rgba(239,68,68,.25);
+  color:var(--red);display:block;
+}
+.form-msg.success{
+  background:rgba(34,197,94,.08);
+  border:1px solid rgba(34,197,94,.25);
+  color:var(--green);display:block;
+}
+
+/* Footer note */
+.form-footer{
+  text-align:center;margin-top:28px;
+  font-family:'DM Mono',monospace;
+  font-size:.6rem;color:var(--text3);
+  line-height:1.8;
+}
+
+/* Register panel (hidden by default) */
+.register-panel{display:none}
+.register-panel.active{display:block}
+.login-panel{display:block}
+.login-panel.hidden{display:none}
+
+/* ── MOBILE ─────────────────────────────────── */
+@media(max-width:900px){
+  body{flex-direction:column;overflow:auto}
+  .left-panel{display:none}
+  .right-panel{width:100%;flex:1;padding:40px 24px}
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Success overlay */
+.success-overlay{
+  position:fixed;inset:0;z-index:999;
+  background:rgba(5,8,16,.95);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:16px;
+  opacity:0;pointer-events:none;
+  transition:opacity .4s ease;
+}
+.success-overlay.visible{opacity:1;pointer-events:all}
+.success-icon{
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(34,197,94,.1);
+  border:1px solid rgba(34,197,94,.3);
+  display:flex;align-items:center;justify-content:center;
+  animation:scaleIn .4s .1s both ease;
+}
+@keyframes scaleIn{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.success-title{
+  font-family:'Syne',sans-serif;
+  font-size:1.4rem;font-weight:800;color:var(--text);
+  animation:fadeUp .4s .2s both ease;
+}
+.success-sub{
+  font-family:'DM Mono',monospace;
+  font-size:.72rem;color:var(--text3);
+  letter-spacing:.06em;
+  animation:fadeUp .4s .3s both ease;
+}
+.success-bar{
+  width:200px;height:3px;
+  background:rgba(34,197,94,.15);
+  border-radius:99px;margin-top:8px;
+  overflow:hidden;
+  animation:fadeUp .4s .35s both ease;
+}
+.success-bar-fill{
+  height:100%;
+  background:var(--green);
+  border-radius:99px;
+  width:0%;
+  transition:width 0.5s ease;
+}
+</style>
+</head>
+<body>
+
+<!-- Orbs -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<!-- ═══════════════ LEFT PANEL ═══════════════ -->
+<div class="left-panel">
+  <a class="lp-logo" href="index.html">
+    <div class="lp-logo-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+        <polyline points="16 7 22 7 22 13"/>
+      </svg>
+    </div>
+    <div>
+      <div class="lp-logo-text">NSE Alpha</div>
+      <div class="lp-logo-sub">ML Prediction Engine</div>
+    </div>
+  </a>
+
+  <h1 class="lp-headline">
+    All NSE data.<br/>
+    <span>One decision.</span><br/>
+    Instantly.
+  </h1>
+  <p class="lp-sub">
+    Sign in to access live ML predictions, intraday signals, backtest engine, portfolio tracker and more.
+  </p>
+
+  <div class="lp-features">
+    <div class="lp-feat">
+      <div class="lp-feat-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+          <polyline points="16 7 22 7 22 13"/>
+        </svg>
+      </div>
+      <div>
+        <div class="lp-feat-title">XGBoost + Ensemble v2 Models</div>
+        <div class="lp-feat-desc">125 engineered features. Direction + confidence on every NSE ticker.</div>
+      </div>
+    </div>
+    <div class="lp-feat">
+      <div class="lp-feat-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+      </div>
+      <div>
+        <div class="lp-feat-title">Intraday 5min / 15min / 1hr Signals</div>
+        <div class="lp-feat-desc">Live entries, targets, stop losses and R:R ratios.</div>
+      </div>
+    </div>
+    <div class="lp-feat">
+      <div class="lp-feat-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div>
+        <div class="lp-feat-title">Backtest + Portfolio Tracker</div>
+        <div class="lp-feat-desc">Full historical performance. P&amp;L tracking with Angel One integration.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ RIGHT PANEL ═══════════════ -->
+<div class="right-panel">
+  <div class="form-card">
+
+    <div class="form-header">
+      <div class="form-title">Welcome back</div>
+      <div class="form-sub">New here? <a href="#" onclick="switchTab('register')">Create an account</a></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="tab-login" onclick="switchTab('login')">Sign In</button>
+      <button class="auth-tab" id="tab-register" onclick="switchTab('register')">Register</button>
+    </div>
+
+    <!-- Error / Success -->
+    <div class="form-msg" id="form-msg"></div>
+
+    <!-- ── LOGIN FORM ── -->
+    <div class="login-panel" id="login-panel">
+      <form id="login-form" onsubmit="handleLogin(event)">
+
+        <div class="form-group">
+          <label class="form-label">Email address</label>
+          <div style="position:relative">
+            <span class="input-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <input class="form-input has-icon" type="email" id="login-email" placeholder="you@example.com" autocomplete="email" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <div style="position:relative">
+            <span class="input-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </span>
+            <input class="form-input has-icon" type="password" id="login-pwd" placeholder="Your password" autocomplete="current-password" required/>
+            <button type="button" class="pwd-toggle" onclick="togglePwd('login-pwd',this)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-helper">
+          <label class="checkbox-wrap">
+            <input type="checkbox" id="remember-me"/>
+            Remember me
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-submit" id="login-btn">
+          <span class="spinner" id="login-spinner"></span>
+          <span id="login-btn-text">Sign In to Dashboard</span>
+        </button>
+
+      </form>
+
+      <div class="form-divider"><span>or</span></div>
+
+      <button class="btn-demo" onclick="handleDemoLogin()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        Continue with Demo Access
+      </button>
+    </div>
+
+    <!-- ── REGISTER FORM ── -->
+    <div class="register-panel" id="register-panel">
+      <form id="register-form" onsubmit="handleRegister(event)">
+
+        <div class="form-group">
+          <label class="form-label">Full name</label>
+          <div style="position:relative">
+            <span class="input-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </span>
+            <input class="form-input has-icon" type="text" id="reg-name" placeholder="Arjun Sharma" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email address</label>
+          <div style="position:relative">
+            <span class="input-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <input class="form-input has-icon" type="email" id="reg-email" placeholder="you@example.com" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <div style="position:relative">
+            <span class="input-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </span>
+            <input class="form-input has-icon" type="password" id="reg-pwd" placeholder="Min 8 characters" required minlength="8"/>
+            <button type="button" class="pwd-toggle" onclick="togglePwd('reg-pwd',this)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Password strength -->
+        <div id="pwd-strength" style="margin:-10px 0 16px;display:none">
+          <div style="display:flex;gap:4px;margin-bottom:4px">
+            <div class="str-seg" id="str1" style="flex:1;height:3px;border-radius:99px;background:var(--border);transition:background .3s ease"></div>
+            <div class="str-seg" id="str2" style="flex:1;height:3px;border-radius:99px;background:var(--border);transition:background .3s ease"></div>
+            <div class="str-seg" id="str3" style="flex:1;height:3px;border-radius:99px;background:var(--border);transition:background .3s ease"></div>
+            <div class="str-seg" id="str4" style="flex:1;height:3px;border-radius:99px;background:var(--border);transition:background .3s ease"></div>
+          </div>
+          <div id="str-label" style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--text3);letter-spacing:.06em"></div>
+        </div>
+
+        <div style="margin-bottom:20px">
+          <label class="checkbox-wrap">
+            <input type="checkbox" id="agree-terms" required/>
+            <span>I agree to the <a href="#" style="color:var(--indigo);text-decoration:none">Terms of Service</a></span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit" id="register-btn">
+          <span class="spinner" id="register-spinner"></span>
+          <span id="register-btn-text">Create Account</span>
+        </button>
+
+      </form>
+    </div>
+
+    <div class="form-footer">
+      Not financial advice. For research only.<br/>
+      Data: Yahoo Finance / NSE India
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SUCCESS OVERLAY ═══════════════ -->
+<div class="success-overlay" id="success-overlay">
+  <div class="success-icon">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+  </div>
+  <div class="success-title">Authentication successful</div>
+  <div class="success-sub">Launching NSE Alpha Dashboard...</div>
+  <div class="success-bar">
+    <div class="success-bar-fill" id="progress-bar"></div>
+  </div>
+  <div id="overlay-hint" style="margin-top:14px;font-family:'DM Mono',monospace;
+       font-size:0.62rem;color:#334155;letter-spacing:0.05em;text-align:center;
+       max-width:280px;line-height:1.7">
+    Streamlit takes 10–20 sec on first launch.<br/>
+    Do not close this window.
+  </div>
+</div>
+
+<script>
+// ── CONFIG ────────────────────────────────────────────────────────────────────
+const STREAMLIT_URL = 'http://localhost:8501';
+const DEMO_USER     = { email: 'demo@nsealpha.com', password: 'demo1234' };
+
+// ── USER STORAGE ──────────────────────────────────────────────────────────────
+function getUsers() {
+  try { return JSON.parse(localStorage.getItem('nse_users') || '{}'); }
+  catch(e) { return {}; }
+}
+function saveUser(email, data) {
+  const users = getUsers();
+  users[email.toLowerCase()] = data;
+  localStorage.setItem('nse_users', JSON.stringify(users));
+}
+
+// ── TAB SWITCHER ──────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  const loginPanel    = document.getElementById('login-panel');
+  const registerPanel = document.getElementById('register-panel');
+  const tabLogin      = document.getElementById('tab-login');
+  const tabReg        = document.getElementById('tab-register');
+  clearMsg();
+
+  if(tab === 'login') {
+    loginPanel.classList.remove('hidden'); loginPanel.style.display='block';
+    registerPanel.style.display='none';
+    tabLogin.classList.add('active'); tabReg.classList.remove('active');
+    document.querySelector('.form-title').textContent = 'Welcome back';
+    document.querySelector('.form-sub').innerHTML = 'New here? <a href="#" onclick="switchTab(\'register\')">Create an account</a>';
+  } else {
+    loginPanel.style.display='none';
+    registerPanel.style.display='block';
+    tabLogin.classList.remove('active'); tabReg.classList.add('active');
+    document.querySelector('.form-title').textContent = 'Create account';
+    document.querySelector('.form-sub').innerHTML = 'Already have one? <a href="#" onclick="switchTab(\'login\')">Sign in</a>';
+  }
+}
+
+// ── MESSAGES ──────────────────────────────────────────────────────────────────
+function showMsg(text, type='error') {
+  const el = document.getElementById('form-msg');
+  el.textContent = text;
+  el.className = 'form-msg ' + type;
+}
+function clearMsg() {
+  const el = document.getElementById('form-msg');
+  el.className = 'form-msg';
+}
+
+// ── PASSWORD VISIBILITY ───────────────────────────────────────────────────────
+function togglePwd(inputId, btn) {
+  const input = document.getElementById(inputId);
+  const isText = input.type === 'text';
+  input.type = isText ? 'password' : 'text';
+  btn.querySelector('svg').style.stroke = isText ? 'var(--text3)' : 'var(--indigo)';
+}
+
+// ── PASSWORD STRENGTH ─────────────────────────────────────────────────────────
+document.getElementById('reg-pwd').addEventListener('input', function() {
+  const pwd = this.value;
+  const wrap = document.getElementById('pwd-strength');
+  if(!pwd) { wrap.style.display='none'; return; }
+  wrap.style.display='block';
+
+  let score = 0;
+  if(pwd.length >= 8)  score++;
+  if(pwd.length >= 12) score++;
+  if(/[A-Z]/.test(pwd) && /[a-z]/.test(pwd)) score++;
+  if(/[0-9]/.test(pwd) || /[^a-zA-Z0-9]/.test(pwd)) score++;
+
+  const colors = ['var(--red)','var(--amber)','var(--blue)','var(--green)'];
+  const labels = ['Weak','Fair','Good','Strong'];
+  for(let i=1; i<=4; i++) {
+    const seg = document.getElementById('str'+i);
+    seg.style.background = i <= score ? colors[score-1] : 'var(--border)';
+  }
+  document.getElementById('str-label').textContent = labels[score-1] || '';
+  document.getElementById('str-label').style.color = colors[score-1] || 'var(--text3)';
+});
+
+// ── LOADING STATE ─────────────────────────────────────────────────────────────
+function setLoading(btnId, spinnerId, textId, loading, text='') {
+  const btn     = document.getElementById(btnId);
+  const spinner = document.getElementById(spinnerId);
+  const txtEl   = document.getElementById(textId);
+  btn.disabled  = loading;
+  spinner.style.display = loading ? 'block' : 'none';
+  if(text) txtEl.textContent = text;
+}
+
+// ── SUCCESS REDIRECT — polls until Streamlit is actually up ──────────────────
+function updateOverlay(title, sub, pct) {
+  document.querySelector('.success-title').textContent = title;
+  document.querySelector('.success-sub').textContent   = sub;
+  document.getElementById('progress-bar').style.width  = pct + '%';
+}
+
+function launchDashboard() {
+  // Show overlay immediately
+  document.getElementById('success-overlay').classList.add('visible');
+  updateOverlay('Authenticated', 'Starting dashboard...', 10);
+
+  const MAX_WAIT  = 60000;   // 60 second timeout
+  const INTERVAL  = 1000;    // check every 1 second
+  const startTime = Date.now();
+  let   attempt   = 0;
+
+  function tryRedirect() {
+    attempt++;
+    const elapsed = Date.now() - startTime;
+    const pct     = Math.min(90, 10 + (elapsed / MAX_WAIT) * 80);
+    const dots    = '.'.repeat(attempt % 4);
+
+    updateOverlay(
+      'Authenticated',
+      'Connecting to dashboard' + dots,
+      pct
+    );
+
+    // Use an iframe probe — works even with CORS because we only check load/error
+    const probe = document.createElement('iframe');
+    probe.style.display = 'none';
+    probe.src = STREAMLIT_URL;
+
+    probe.onload = function() {
+      // Streamlit responded — redirect now
+      document.body.removeChild(probe);
+      updateOverlay('Dashboard is ready!', 'Opening now...', 100);
+      setTimeout(() => { window.location.href = STREAMLIT_URL; }, 400);
+    };
+
+    probe.onerror = function() {
+      document.body.removeChild(probe);
+      if (elapsed < MAX_WAIT) {
+        setTimeout(tryRedirect, INTERVAL);
+      } else {
+        // Timeout — try opening anyway
+        updateOverlay('Opening dashboard...', 'Redirecting now...', 100);
+        setTimeout(() => { window.location.href = STREAMLIT_URL; }, 500);
+      }
+    };
+
+    // Safety timeout per probe attempt (3s)
+    setTimeout(() => {
+      if (probe.parentNode) {
+        document.body.removeChild(probe);
+        // If iframe loaded without firing onload (Streamlit quirk), redirect anyway
+        // Check if enough time passed — Streamlit usually loads within 15s
+        if (elapsed > 15000) {
+          updateOverlay('Dashboard should be ready', 'Redirecting...', 100);
+          setTimeout(() => { window.location.href = STREAMLIT_URL; }, 400);
+        } else {
+          setTimeout(tryRedirect, INTERVAL);
+        }
+      }
+    }, 3000);
+
+    document.body.appendChild(probe);
+  }
+
+  // Wait 2 seconds before first attempt (let Streamlit breathe)
+  setTimeout(tryRedirect, 2000);
+}
+
+// ── LOGIN HANDLER ─────────────────────────────────────────────────────────────
+function handleLogin(e) {
+  e.preventDefault();
+  clearMsg();
+  const email = document.getElementById('login-email').value.trim().toLowerCase();
+  const pwd   = document.getElementById('login-pwd').value;
+
+  setLoading('login-btn','login-spinner','login-btn-text', true, 'Authenticating...');
+
+  setTimeout(() => {
+    // Check demo credentials
+    if(email === DEMO_USER.email && pwd === DEMO_USER.password) {
+      setLoading('login-btn','login-spinner','login-btn-text', false, 'Sign In to Dashboard');
+      launchDashboard(); return;
+    }
+    // Check registered users
+    const users = getUsers();
+    if(users[email] && users[email].password === pwd) {
+      setLoading('login-btn','login-spinner','login-btn-text', false, 'Sign In to Dashboard');
+      launchDashboard(); return;
+    }
+    // Failed
+    setLoading('login-btn','login-spinner','login-btn-text', false, 'Sign In to Dashboard');
+    showMsg('Invalid email or password. Try demo@nsealpha.com / demo1234 for demo access.');
+  }, 900);
+}
+
+// ── DEMO LOGIN ────────────────────────────────────────────────────────────────
+function handleDemoLogin() {
+  document.getElementById('login-email').value = DEMO_USER.email;
+  document.getElementById('login-pwd').value   = DEMO_USER.password;
+  clearMsg();
+  showMsg('Demo credentials loaded. Click Sign In.', 'success');
+}
+
+// ── REGISTER HANDLER ──────────────────────────────────────────────────────────
+function handleRegister(e) {
+  e.preventDefault();
+  clearMsg();
+
+  const name  = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim().toLowerCase();
+  const pwd   = document.getElementById('reg-pwd').value;
+
+  if(pwd.length < 8) {
+    showMsg('Password must be at least 8 characters.'); return;
+  }
+
+  const users = getUsers();
+  if(users[email]) {
+    showMsg('An account with this email already exists.'); return;
+  }
+
+  setLoading('register-btn','register-spinner','register-btn-text', true, 'Creating account...');
+
+  setTimeout(() => {
+    saveUser(email, { name, password: pwd });
+    setLoading('register-btn','register-spinner','register-btn-text', false, 'Create Account');
+    showMsg('Account created! Launching dashboard...', 'success');
+    setTimeout(() => launchDashboard(), 1200);
+  }, 1000);
+}
+
+// ── ENTER KEY ON DEMO BTN ─────────────────────────────────────────────────────
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Enter' && document.activeElement.tagName !== 'BUTTON'
+    && document.activeElement.tagName !== 'INPUT') {
+    document.querySelector('.btn-submit:not([disabled])')?.click();
+  }
+});
+</script>
+</body>
+</html>

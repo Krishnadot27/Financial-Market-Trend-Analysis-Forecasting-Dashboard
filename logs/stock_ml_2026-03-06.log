@@ -1,0 +1,96 @@
+2026-03-06 18:57:47 | INFO     | __main__:main:55 — ============================================================
+2026-03-06 18:57:47 | INFO     | __main__:main:56 —   STEP 6 — Explainability + Sentiment: RELIANCE.NS
+2026-03-06 18:57:47 | INFO     | __main__:main:57 — ============================================================
+2026-03-06 18:57:47 | INFO     | src.model_training:load:164 — Model loaded from C:\Users\krush\OneDrive\Documents\predictive analysis pr\models\xgboost_regression_RELIANCE_NS.pkl
+2026-03-06 18:57:47 | INFO     | __main__:main:83 — Model loaded: xgboost_regression_RELIANCE_NS.pkl
+2026-03-06 18:57:47 | INFO     | __main__:main:88 — 
+── Part 1: SHAP Explainability ──
+2026-03-06 18:57:47 | WARNING  | __main__:main:127 — SHAP not installed. Install with: pip install shap
+Skipping explainability section.
+2026-03-06 18:57:47 | INFO     | __main__:main:135 — 
+── Part 2: News Sentiment Analysis ──
+2026-03-06 18:57:47 | INFO     | __main__:main:138 — Fetching news for: Reliance Industries
+2026-03-06 18:57:47 | WARNING  | src.sentiment:fetch_news_headlines:230 — NEWS_API_KEY not set. Using sample headlines for demo. Get a free key at newsapi.org
+2026-03-06 18:58:39 | INFO     | src.sentiment:_load_model:82 — Loading FinBERT: ProsusAI/finbert
+2026-03-06 19:07:32 | SUCCESS  | src.sentiment:_load_model:90 — FinBERT loaded successfully
+2026-03-06 19:07:32 | INFO     | src.sentiment:fetch_news_sentiment:313 — Sentiment summary for Reliance Industries:
+  Positive: 1
+  Negative: 3
+  Neutral:  4
+  Avg score: -0.232
+2026-03-06 19:07:32 | INFO     | __main__:main:146 — 
+Sentiment results (8 headlines):
+2026-03-06 19:07:32 | INFO     | __main__:main:150 — 
+── Adding sentiment features to feature matrix ──
+2026-03-06 19:17:45 | INFO     | __main__:main:55 — ============================================================
+2026-03-06 19:17:45 | INFO     | __main__:main:56 —   STEP 6 — Explainability + Sentiment: RELIANCE.NS
+2026-03-06 19:17:45 | INFO     | __main__:main:57 — ============================================================
+2026-03-06 19:17:45 | INFO     | src.model_training:load:164 — Model loaded from C:\Users\krush\OneDrive\Documents\predictive analysis pr\models\xgboost_regression_RELIANCE_NS.pkl
+2026-03-06 19:17:45 | INFO     | __main__:main:83 — Model loaded: xgboost_regression_RELIANCE_NS.pkl
+2026-03-06 19:17:45 | INFO     | __main__:main:88 — 
+── Part 1: SHAP Explainability ──
+2026-03-06 19:17:45 | WARNING  | __main__:main:127 — SHAP not installed. Install with: pip install shap
+Skipping explainability section.
+2026-03-06 19:17:45 | INFO     | __main__:main:135 — 
+── Part 2: News Sentiment Analysis ──
+2026-03-06 19:17:45 | INFO     | __main__:main:138 — Fetching news for: Reliance Industries
+2026-03-06 19:17:45 | WARNING  | src.sentiment:fetch_news_headlines:230 — NEWS_API_KEY not set. Using sample headlines for demo. Get a free key at newsapi.org
+2026-03-06 19:18:19 | INFO     | src.sentiment:_load_model:82 — Loading FinBERT: ProsusAI/finbert
+2026-03-06 19:18:22 | SUCCESS  | src.sentiment:_load_model:90 — FinBERT loaded successfully
+2026-03-06 19:18:23 | INFO     | src.sentiment:fetch_news_sentiment:313 — Sentiment summary for Reliance Industries:
+  Positive: 1
+  Negative: 3
+  Neutral:  4
+  Avg score: -0.232
+2026-03-06 19:18:23 | INFO     | __main__:main:146 — 
+Sentiment results (8 headlines):
+2026-03-06 19:18:23 | INFO     | __main__:main:150 — 
+── Adding sentiment features to feature matrix ──
+2026-03-06 19:28:47 | INFO     | __main__:main:55 — ============================================================
+2026-03-06 19:28:47 | INFO     | __main__:main:56 —   STEP 6 — Explainability + Sentiment: RELIANCE.NS
+2026-03-06 19:28:47 | INFO     | __main__:main:57 — ============================================================
+2026-03-06 19:28:48 | INFO     | src.model_training:load:164 — Model loaded from C:\Users\krush\OneDrive\Documents\predictive analysis pr\models\xgboost_regression_RELIANCE_NS.pkl
+2026-03-06 19:28:48 | INFO     | __main__:main:83 — Model loaded: xgboost_regression_RELIANCE_NS.pkl
+2026-03-06 19:28:48 | INFO     | __main__:main:88 — 
+── Part 1: SHAP Explainability ──
+2026-03-06 19:28:48 | WARNING  | __main__:main:127 — SHAP not installed. Install with: pip install shap
+Skipping explainability section.
+2026-03-06 19:28:48 | INFO     | __main__:main:135 — 
+── Part 2: News Sentiment Analysis ──
+2026-03-06 19:28:48 | INFO     | __main__:main:138 — Fetching news for: Reliance Industries
+2026-03-06 19:28:48 | WARNING  | src.sentiment:fetch_news_headlines:230 — NEWS_API_KEY not set. Using sample headlines for demo. Get a free key at newsapi.org
+2026-03-06 19:28:52 | INFO     | src.sentiment:_load_model:82 — Loading FinBERT: ProsusAI/finbert
+2026-03-06 19:28:55 | SUCCESS  | src.sentiment:_load_model:90 — FinBERT loaded successfully
+2026-03-06 19:28:55 | INFO     | src.sentiment:fetch_news_sentiment:313 — Sentiment summary for Reliance Industries:
+  Positive: 1
+  Negative: 3
+  Neutral:  4
+  Avg score: -0.232
+2026-03-06 19:28:55 | INFO     | __main__:main:146 — 
+Sentiment results (8 headlines):
+2026-03-06 19:28:55 | INFO     | __main__:main:150 — 
+── Adding sentiment features to feature matrix ──
+2026-03-06 19:28:55 | INFO     | src.sentiment:add_sentiment_features:369 — Added 4 sentiment features to feature matrix
+2026-03-06 19:28:55 | INFO     | __main__:main:155 — New columns added: ['sentiment_score', 'sentiment_rolling3d', 'sentiment_positive', 'sentiment_negative']
+2026-03-06 19:28:55 | INFO     | __main__:main:156 — 
+Latest sentiment values:
+2026-03-06 19:28:55 | INFO     | __main__:main:172 — 
+── Part 3: Sentiment Feature Impact Test ──
+2026-03-06 19:28:55 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=125  rows=1883
+2026-03-06 19:28:56 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.8s  best_iteration=N/A
+2026-03-06 19:28:56 | INFO     | src.model_training:fit:361 — Training XGBoost [regression]  features=129  rows=1883
+2026-03-06 19:28:57 | SUCCESS  | src.model_training:fit:383 — XGBoost trained in 0.8s  best_iteration=N/A
+2026-03-06 19:28:57 | INFO     | __main__:main:206 — 
+============================================================
+2026-03-06 19:28:57 | INFO     | __main__:main:207 —   Step 6 complete!
+2026-03-06 19:28:57 | INFO     | __main__:main:208 —   ✔  SHAP plots saved → results/
+2026-03-06 19:28:57 | INFO     | __main__:main:209 —   ✔  Sentiment features added to pipeline
+2026-03-06 19:28:57 | INFO     | __main__:main:210 —   ✔  Model comparison with/without sentiment done
+2026-03-06 19:28:57 | INFO     | __main__:main:211 — ============================================================
+2026-03-06 19:29:45 | INFO     | __main__:run_full_pipeline:74 — =================================================================
+2026-03-06 19:29:45 | INFO     | __main__:run_full_pipeline:75 —   NSE STOCK PREDICTION — FULL PIPELINE
+2026-03-06 19:29:45 | INFO     | __main__:run_full_pipeline:76 —   Tickers: ['RELIANCE.NS', 'TCS.NS', 'INFY.NS', 'HDFCBANK.NS', 'ICICIBANK.NS', 'HINDUNILVR.NS', 'WIPRO.NS', 'LT.NS', 'SBIN.NS', 'BAJFINANCE.NS']
+2026-03-06 19:29:45 | INFO     | __main__:run_full_pipeline:77 —   Task:    regression
+2026-03-06 19:29:45 | INFO     | __main__:run_full_pipeline:78 — =================================================================
+2026-03-06 19:29:45 | INFO     | __main__:run_full_pipeline:83 — 
+── STEP 1: Data Collection ──

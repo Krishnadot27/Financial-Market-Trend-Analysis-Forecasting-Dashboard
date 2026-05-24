@@ -1,0 +1,4 @@
+Model,RMSE,MAE,R2
+LinearBaseline,0.0158,0.0115,-0.4535
+RandomForest,0.0153,0.0116,-0.3627
+XGBoost,0.0142,0.0106,-0.1706

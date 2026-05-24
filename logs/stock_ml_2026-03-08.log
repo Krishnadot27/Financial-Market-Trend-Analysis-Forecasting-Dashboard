@@ -1,0 +1,937 @@
+2026-03-08 19:45:10 | INFO     | __main__:main:116 — =======================================================
+2026-03-08 19:45:10 | INFO     | __main__:main:117 —   NSE Alpha — Daily Alert Runner
+2026-03-08 19:45:10 | INFO     | __main__:main:118 — =======================================================
+2026-03-08 19:45:10 | INFO     | __main__:main:121 — Generating predictions for all tickers...
+2026-03-08 19:45:13 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:13 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:13 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:13 | INFO     | __main__:get_predictions:104 —   RELIANCE.NS: DOWN (-0.0050)
+2026-03-08 19:45:13 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:13 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:13 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:13 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:13 | INFO     | __main__:get_predictions:104 —   TCS.NS: UP (+0.0031)
+2026-03-08 19:45:14 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:14 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:14 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:14 | DEBUG    | src.utils:wrapper:140 — build completed in 0.09s
+2026-03-08 19:45:14 | INFO     | __main__:get_predictions:104 —   HDFCBANK.NS: UP (+0.0013)
+2026-03-08 19:45:15 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:15 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:15 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:15 | INFO     | __main__:get_predictions:104 —   BHARTIARTL.NS: DOWN (-0.0081)
+2026-03-08 19:45:15 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:15 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:15 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:15 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:15 | INFO     | __main__:get_predictions:104 —   ICICIBANK.NS: UP (+0.0037)
+2026-03-08 19:45:15 | WARNING  | __main__:get_predictions:52 — No model for INFOSYS.NS, skipping
+2026-03-08 19:45:16 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:16 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:16 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:16 | INFO     | __main__:get_predictions:104 —   SBIN.NS: DOWN (-0.0001)
+2026-03-08 19:45:16 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:16 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:16 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:16 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-08 19:45:16 | INFO     | __main__:get_predictions:104 —   HINDUNILVR.NS: UP (+0.0025)
+2026-03-08 19:45:17 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:17 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:17 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:17 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-08 19:45:17 | INFO     | __main__:get_predictions:104 —   ITC.NS: DOWN (-0.0002)
+2026-03-08 19:45:18 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:18 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:18 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:18 | INFO     | __main__:get_predictions:104 —   LT.NS: DOWN (-0.0090)
+2026-03-08 19:45:18 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:18 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:18 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:18 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:18 | INFO     | __main__:get_predictions:104 —   KOTAKBANK.NS: DOWN (-0.0073)
+2026-03-08 19:45:19 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:19 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:19 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:19 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-08 19:45:19 | INFO     | __main__:get_predictions:104 —   AXISBANK.NS: DOWN (-0.0024)
+2026-03-08 19:45:20 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:20 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:20 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:20 | INFO     | __main__:get_predictions:104 —   BAJFINANCE.NS: DOWN (-0.0002)
+2026-03-08 19:45:20 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:20 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:20 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:20 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:20 | INFO     | __main__:get_predictions:104 —   WIPRO.NS: UP (+0.0173)
+2026-03-08 19:45:21 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:21 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:21 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:21 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:21 | INFO     | __main__:get_predictions:104 —   HCLTECH.NS: UP (+0.0029)
+2026-03-08 19:45:22 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:22 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:22 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:22 | INFO     | __main__:get_predictions:104 —   ASIANPAINT.NS: UP (+0.0144)
+2026-03-08 19:45:22 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:22 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:22 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 293 rows × 125 features (dropped 202 NaN rows)
+2026-03-08 19:45:22 | DEBUG    | src.utils:wrapper:140 — build completed in 0.04s
+2026-03-08 19:45:22 | INFO     | __main__:get_predictions:104 —   MARUTI.NS: DOWN (-0.0110)
+2026-03-08 19:45:23 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:23 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:23 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:23 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-08 19:45:23 | INFO     | __main__:get_predictions:104 —   SUNPHARMA.NS: DOWN (-0.0042)
+2026-03-08 19:45:24 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:24 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:24 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:24 | INFO     | __main__:get_predictions:104 —   TITAN.NS: UP (+0.0073)
+2026-03-08 19:45:24 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:24 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:25 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:25 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-08 19:45:25 | INFO     | __main__:get_predictions:104 —   ULTRACEMCO.NS: DOWN (-0.0073)
+2026-03-08 19:45:25 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:25 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:25 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:25 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:25 | INFO     | __main__:get_predictions:104 —   NESTLEIND.NS: DOWN (-0.0095)
+2026-03-08 19:45:26 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:26 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:26 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:26 | INFO     | __main__:get_predictions:104 —   POWERGRID.NS: DOWN (-0.0033)
+2026-03-08 19:45:26 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:26 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:26 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:26 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:26 | INFO     | __main__:get_predictions:104 —   NTPC.NS: DOWN (-0.0018)
+2026-03-08 19:45:27 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:27 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:27 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:27 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:27 | INFO     | __main__:get_predictions:104 —   TECHM.NS: UP (+0.0013)
+2026-03-08 19:45:28 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:28 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:28 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-08 19:45:28 | INFO     | __main__:get_predictions:104 —   INDUSINDBK.NS: UP (+0.0088)
+2026-03-08 19:45:28 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:28 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:28 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:28 | DEBUG    | src.utils:wrapper:140 — build completed in 0.07s
+2026-03-08 19:45:28 | INFO     | __main__:get_predictions:104 —   BAJAJFINSV.NS: UP (+0.0013)
+2026-03-08 19:45:29 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:29 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:29 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:29 | DEBUG    | src.utils:wrapper:140 — build completed in 0.10s
+2026-03-08 19:45:29 | INFO     | __main__:get_predictions:104 —   ONGC.NS: UP (+0.0004)
+2026-03-08 19:45:30 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:30 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:30 | DEBUG    | src.utils:wrapper:140 — build completed in 0.09s
+2026-03-08 19:45:30 | INFO     | __main__:get_predictions:104 —   COALINDIA.NS: DOWN (-0.0067)
+2026-03-08 19:45:30 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:30 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:31 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:31 | DEBUG    | src.utils:wrapper:140 — build completed in 0.08s
+2026-03-08 19:45:31 | INFO     | __main__:get_predictions:104 —   JSWSTEEL.NS: DOWN (-0.0024)
+2026-03-08 19:45:31 | WARNING  | __main__:get_predictions:52 — No model for TATAMOTORS.NS, skipping
+2026-03-08 19:45:31 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:31 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:31 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:31 | DEBUG    | src.utils:wrapper:140 — build completed in 0.09s
+2026-03-08 19:45:31 | INFO     | __main__:get_predictions:104 —   TATASTEEL.NS: DOWN (-0.0024)
+2026-03-08 19:45:32 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:32 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:32 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:32 | INFO     | __main__:get_predictions:104 —   ADANIPORTS.NS: DOWN (-0.0129)
+2026-03-08 19:45:32 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:32 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:32 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:32 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:32 | INFO     | __main__:get_predictions:104 —   ADANIENT.NS: UP (+0.0010)
+2026-03-08 19:45:33 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:33 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:33 | DEBUG    | src.utils:wrapper:140 — build completed in 0.04s
+2026-03-08 19:45:33 | INFO     | __main__:get_predictions:104 —   CIPLA.NS: DOWN (-0.0044)
+2026-03-08 19:45:33 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:33 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:34 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:34 | DEBUG    | src.utils:wrapper:140 — build completed in 0.04s
+2026-03-08 19:45:34 | INFO     | __main__:get_predictions:104 —   DRREDDY.NS: DOWN (-0.0027)
+2026-03-08 19:45:34 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:34 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:34 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:34 | DEBUG    | src.utils:wrapper:140 — build completed in 0.04s
+2026-03-08 19:45:34 | INFO     | __main__:get_predictions:104 —   DIVISLAB.NS: DOWN (-0.0017)
+2026-03-08 19:45:35 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:35 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:35 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:35 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:35 | INFO     | __main__:get_predictions:104 —   EICHERMOT.NS: UP (+0.0017)
+2026-03-08 19:45:36 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:36 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:36 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 291 rows × 125 features (dropped 204 NaN rows)
+2026-03-08 19:45:36 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:36 | INFO     | __main__:get_predictions:104 —   HEROMOTOCO.NS: UP (+0.0004)
+2026-03-08 19:45:37 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:37 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:37 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:37 | INFO     | __main__:get_predictions:104 —   BRITANNIA.NS: DOWN (-0.0050)
+2026-03-08 19:45:37 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:37 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:37 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:37 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:37 | INFO     | __main__:get_predictions:104 —   APOLLOHOSP.NS: DOWN (-0.0056)
+2026-03-08 19:45:38 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:38 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:38 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:38 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:38 | INFO     | __main__:get_predictions:104 —   BAJAJ-AUTO.NS: UP (+0.0020)
+2026-03-08 19:45:39 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:39 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:39 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:39 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:39 | INFO     | __main__:get_predictions:104 —   BPCL.NS: DOWN (-0.0050)
+2026-03-08 19:45:40 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:40 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:40 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:40 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:40 | INFO     | __main__:get_predictions:104 —   GRASIM.NS: DOWN (-0.0091)
+2026-03-08 19:45:41 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:41 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:41 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:41 | INFO     | __main__:get_predictions:104 —   HINDALCO.NS: DOWN (-0.0110)
+2026-03-08 19:45:41 | WARNING  | __main__:get_predictions:52 — No model for MM.NS, skipping
+2026-03-08 19:45:41 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:41 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:41 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:41 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:41 | INFO     | __main__:get_predictions:104 —   SBILIFE.NS: UP (+0.0049)
+2026-03-08 19:45:42 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:42 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:42 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:42 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:42 | INFO     | __main__:get_predictions:104 —   HDFCLIFE.NS: DOWN (-0.0057)
+2026-03-08 19:45:43 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:43 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:43 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:43 | INFO     | __main__:get_predictions:104 —   TATACONSUM.NS: DOWN (-0.0074)
+2026-03-08 19:45:43 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:43 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:44 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:44 | DEBUG    | src.utils:wrapper:140 — build completed in 0.06s
+2026-03-08 19:45:44 | INFO     | __main__:get_predictions:104 —   UPL.NS: DOWN (-0.0065)
+2026-03-08 19:45:44 | INFO     | src.feature_engineering:build:483 — Building features for 495 rows...
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:44 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 295 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:44 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:44 | INFO     | __main__:get_predictions:104 —   SHRIRAMFIN.NS: DOWN (-0.0011)
+2026-03-08 19:45:44 | INFO     | __main__:main:128 — 
+47 tickers predicted:
+2026-03-08 19:45:44 | INFO     | __main__:main:131 —   🟢 Bullish: 17  🔴 Bearish: 30
+2026-03-08 19:45:44 | INFO     | __main__:main:134 — 
+Detecting market regime...
+2026-03-08 19:45:44 | INFO     | src.feature_engineering:build:483 — Building features for 247 rows...
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_moving_averages:105 — ✔ Moving averages added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_macd:135 — ✔ MACD added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_rsi:164 — ✔ RSI added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_stochastic:182 — ✔ Stochastic added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_roc:193 — ✔ ROC added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_williams_r:206 — ✔ Williams %R added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_bollinger_bands:238 — ✔ Bollinger Bands added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_atr:267 — ✔ ATR added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_rolling_volatility:284 — ✔ Rolling volatility added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_keltner_channels:303 — ✔ Keltner Channels added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_volume_features:344 — ✔ Volume features added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_lag_features:372 — ✔ Lag features added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_rolling_stats:406 — ✔ Rolling stats added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_calendar_features:435 — ✔ Calendar features added
+2026-03-08 19:45:44 | DEBUG    | src.feature_engineering:add_targets:464 — ✔ Target variables added
+2026-03-08 19:45:44 | SUCCESS  | src.feature_engineering:build:510 — Feature matrix ready: 47 rows × 125 features (dropped 200 NaN rows)
+2026-03-08 19:45:44 | DEBUG    | src.utils:wrapper:140 — build completed in 0.05s
+2026-03-08 19:45:44 | INFO     | __main__:main:150 — Regime: ❓ UNKNOWN (0%)
+2026-03-08 19:45:44 | INFO     | __main__:main:158 — 
+Sending alerts...
+2026-03-08 19:45:47 | ERROR    | src.alerts:send:331 — Email failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-359b2dffbf2sm11256442a91.13 - gsmtp')
+2026-03-08 19:45:48 | SUCCESS  | src.alerts:send:418 — WhatsApp sent! SID: SM5cd3284c1b888f7c7dfdf4ae8ff6e825
+2026-03-08 19:45:48 | INFO     | __main__:main:166 — 
+=======================================================
+2026-03-08 19:45:48 | INFO     | __main__:main:167 —   Email:     ✘ Not sent
+2026-03-08 19:45:48 | INFO     | __main__:main:168 —   WhatsApp:  ✔ Sent
+2026-03-08 19:45:48 | INFO     | __main__:main:169 — =======================================================
+2026-03-08 19:45:48 | INFO     | __main__:main:172 — 
+Top Bullish Picks:
+2026-03-08 19:45:48 | INFO     | __main__:main:180 — 
+Top Bearish Picks:

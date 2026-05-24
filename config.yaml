@@ -1,0 +1,168 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# stock-market-ml/config.yaml
+# Single source of truth for all project parameters.
+# Import via: from src.utils import load_config; cfg = load_config()
+# ══════════════════════════════════════════════════════════════════════════════
+
+project:
+  name: "stock-market-ml"
+  version: "1.0.0"
+  random_seed: 42
+
+# ── Data ───────────────────────────────────────────────────────────────────────
+data:
+  start_date: "2015-01-01"
+  end_date: "2025-12-31"
+  tickers:
+    - "RELIANCE.NS"
+    - "TCS.NS"
+    - "HDFCBANK.NS"
+    - "BHARTIARTL.NS"
+    - "ICICIBANK.NS"
+    - "INFY.NS"
+    - "SBIN.NS"
+    - "HINDUNILVR.NS"
+    - "ITC.NS"
+    - "LT.NS"
+    - "KOTAKBANK.NS"
+    - "AXISBANK.NS"
+    - "BAJFINANCE.NS"
+    - "WIPRO.NS"
+    - "HCLTECH.NS"
+    - "ASIANPAINT.NS"
+    - "MARUTI.NS"
+    - "SUNPHARMA.NS"
+    - "TITAN.NS"
+    - "ULTRACEMCO.NS"
+    - "NESTLEIND.NS"
+    - "POWERGRID.NS"
+    - "NTPC.NS"
+    - "TECHM.NS"
+    - "INDUSINDBK.NS"
+    - "BAJAJFINSV.NS"
+    - "ONGC.NS"
+    - "COALINDIA.NS"
+    - "JSWSTEEL.NS"
+    - "TATAMOTORS.NS"
+    - "TATASTEEL.NS"
+    - "ADANIPORTS.NS"
+    - "ADANIENT.NS"
+    - "CIPLA.NS"
+    - "DRREDDY.NS"
+    - "DIVISLAB.NS"
+    - "EICHERMOT.NS"
+    - "HEROMOTOCO.NS"
+    - "BRITANNIA.NS"
+    - "APOLLOHOSP.NS"
+    - "BAJAJ-AUTO.NS"
+    - "BPCL.NS"
+    - "GRASIM.NS"
+    - "HINDALCO.NS"
+    - "M&M.NS"
+    - "SBILIFE.NS"
+    - "HDFCLIFE.NS"
+    - "TATACONSUM.NS"
+    - "UPL.NS"
+    - "SHRIRAMFIN.NS"
+
+  # NIFTY 50 index benchmark
+  benchmark: "^NSEI"
+
+  # Date range — 10 years of daily data
+  start_date: "2014-01-01"
+  end_date: "2024-12-31"
+
+  # Frequency: 1d | 1h | 5m
+  interval: "1d"
+
+  # Paths (relative to project root)
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  external_dir: "data/external"
+
+# ── Train / Val / Test split ───────────────────────────────────────────────────
+split:
+  # Timeline: |──────── TRAIN ────────|── VAL ──|── TEST ──|
+  test_ratio: 0.15      # ~1.5 years test
+  val_ratio:  0.10      # ~1 year validation
+  # Walk-forward CV
+  n_cv_splits: 5
+  cv_gap: 1             # 1-day gap between train and val fold (avoids leakage)
+
+# ── Feature Engineering ────────────────────────────────────────────────────────
+features:
+  sma_windows:  [5, 10, 20, 50, 200]
+  ema_windows:  [5, 10, 20, 50]
+  rsi_periods:  [7, 14, 21]
+  bb_window:    20
+  bb_std:       2
+  atr_window:   14
+  macd_fast:    12
+  macd_slow:    26
+  macd_signal:  9
+  lag_cols:     ["Close", "Volume", "LogReturn"]
+  lag_periods:  [1, 2, 3, 5, 10]
+  rolling_windows: [5, 10, 20]
+  vol_windows:  [5, 10, 20]
+  prediction_horizon: 1    # next-day
+
+# ── Model ──────────────────────────────────────────────────────────────────────
+model:
+  # 'regression' | 'classification'
+  task: "classification"
+
+  xgboost:
+    n_estimators: 500
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.1
+    reg_lambda: 1.0
+
+  lstm:
+    lookback: 60           # 60 trading days (~3 months)
+    units: [128, 64, 32]
+    dropout: 0.2
+    batch_size: 32
+    epochs: 100
+    patience: 15           # EarlyStopping patience
+
+# ── Backtesting ────────────────────────────────────────────────────────────────
+backtest:
+  transaction_cost: 0.001  # 0.1% (NSE brokerage + STT)
+  slippage: 0.0005         # 0.05%
+  signal_threshold: 0.0    # predicted_return > 0 → BUY
+
+# ── Risk / Finance ─────────────────────────────────────────────────────────────
+finance:
+  risk_free_rate: 0.065    # India 10-yr G-Sec ~6.5%
+  trading_days: 252
+
+# ── Paths ──────────────────────────────────────────────────────────────────────
+paths:
+  models_dir:  "models"
+  results_dir: "results"
+  logs_dir:    "logs"
+
+#----alerts-----------------------------------------------
+alerts:
+  whatsapp:
+    enabled: true
+    account_sid: "AC09ca88f7130608cc2743adb33d2df60c"     # from twilio.com console
+    auth_token:  "98285bd5a1444434fed2ef8897d26b1f"       # from twilio.com console
+    from_number: "whatsapp:+14155238886"
+    to_number:   "whatsapp:+917385914470"  # your number
+  email:
+    enabled: true
+    sender:     "worksapce2785@gmail.com"
+    password:   "Krishna@2785"   # Gmail App Password
+    recipients: ["you@gmail.com"]
+
+broker:
+  angel_one:
+    enabled:   true
+    api_key:   your_api_key       # from smartapi.angelbroking.com
+    client_id: your_client_id     # your Angel One login ID
+    password:  your_mpin          # your 4-digit MPIN
+    totp_key:  your_totp_secret   # 32-char secret from Angel One TOTP setup
